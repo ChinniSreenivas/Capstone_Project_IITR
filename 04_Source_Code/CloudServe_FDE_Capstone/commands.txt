@@ -1,0 +1,69 @@
+
+## 1. Start the FastAPI backend
+
+Open Command Prompt window 1 and run:
+
+```
+cd /d "D:\Bhavana_Projects\BhavanaKomaravathi_Capstone_Submission\04_Source_Code\CloudServe_FDE_Capstone"
+.venv\Scripts\activate
+python -m uvicorn src.api:app --host 127.0.0.1 --port 8000
+```
+
+Keep this window open.
+
+## 2. Start the webpage frontend
+
+Open Command Prompt window 2 and run:
+
+```
+cd /d "D:\Bhavana_Projects\BhavanaKomaravathi_Capstone_Submission\04_Source_Code\CloudServe_FDE_Capstone\frontend"
+python -m http.server 5500
+```
+
+Keep this window open too.
+
+## 3. Open these browser links
+
+CloudServe Support Center
+
+Your customer support webpage
+
+[http://127.0.0.1:5500/](http://127.0.0.1:5500/?utm_source=chatgpt.com)
+
+Open
+
+Backend API documentation
+
+Test ticket submission and API responses
+
+[http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs?utm_source=chatgpt.com)
+
+Open
+
+Backend health check
+
+Confirm the API is responding
+
+[http://127.0.0.1:8000/health](http://127.0.0.1:8000/health?utm_source=chatgpt.com)
+
+Check
+
+## 4. If port 8000 is already in use
+
+If you see `WinError 10048`, another backend is already using that port. Check whether it is working at `http://127.0.0.1:8000/health` before starting another server. If it responds correctly, leave the existing backend running.
+
+D:\Bhavana_Projects\BhavanaKomaravathi_Capstone_Submission\04_Source_Code\CloudServe_FDE_Capstone>.venv\Scripts\activate
+
+(.venv) D:\Bhavana_Projects\BhavanaKomaravathi_Capstone_Submission\04_Source_Code\CloudServe_FDE_Capstone>python -m pytest tests -vD:\Bhavana_Projects\BhavanaKomaravathi_Capstone_Submission\04_Source_Code\CloudServe_FDE_Capstone>.venv\Scripts\activate
+
+(.venv) D:\Bhavana_Projects\BhavanaKomaravathi_Capstone_Submission\04_Source_Code\CloudServe_FDE_Capstone>python -m pytest tests -v
+
+## 5. Before recording your capstone video
+
+- Open the webpage and show the ticket form.
+- Submit a sample ticket and explain the AI classification and routing decision.
+- Show the API response in `/docs`.
+- Show the seven passing tests and your 500-ticket development and 80-ticket validation evaluation outputs.
+- Explain the current limitations honestly.
+
+Remember: both server windows must remain open while you demonstrate the webpage. Stopping either server will interrupt the corresponding service.
